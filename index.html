@@ -1,0 +1,99 @@
+<!--last edit 4/11/2026 -->
+<!--edit repsoniveness to how page responds to movement, check mobile status, footer, and format other pages as well-->
+
+<!DOCTYPE html>
+<html lang = "en-US">
+    <head>
+        <meta charset = "utf-8">
+        <title>Shoplifting Through Rational Choice Theory</title>
+        <!--<link rel = "stylesheet" href = "stylesheet.css">-->
+         <link rel = "stylesheet" href = "styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header class = "headercontainer">
+            <div class = "header-text">
+                <h1 class = "title">STRCT</h1>
+                <h2 class = "subtitle">Shoplifting Through Rational Choice Theory</h2>
+            </div>
+            <div class = "logo">
+                <img src = "STRCTlogo.png" width = "100" height = "100">
+            </div>  
+        </header>
+        <div class = "navbar">
+            <nav>
+                <ul class = "nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="dataindex.html">Analysis</a></li>
+                    <li><a href="testimonial.html">Community Perspective</a></li>
+                    <!--<li><a href="placeholdertwo.html">Placeholder Two</a></li>-->
+                    <li><a href="aboutindex.html">About</a></li>
+                    <li><a href = "sourcesindex.html">References</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class = "card">
+            <h1>header1</h1>
+            <p>############ ########### ########### ############## ################ ############## ############## ############## ########### ##########</p>
+            <br>
+            <p>############ ########### ########### ############## ################ ############## ############## ############## ########### ##########</p>
+
+        </div>
+        <div class = "card">
+            <div class = "card-image">
+                <h2>header2</h2>
+                <img src = "maddiefat.jpg" width = "300" height = "300">
+                <p>##################### ############# ############## ############# #############</p>
+            </div>
+            
+        </div>
+        <!--- slide show - ------------------------------------------------>
+        <div class = "slidecard">
+            <div class = "slidecard-txt">
+                <h2>header2</h2>
+                <p>############ ######### ###################### ######### ###################### ######### ##########
+                    ############ ######### ###################### ######### ###################### ######### ##########
+                    ############ ######### ###################### ######### ##########
+                </p>
+                <br>
+                <div class = "slidecard-txt-button">
+                    <a href = "dataindex.html">Learn More</a>
+                </div>
+            </div>
+            <div class = "slideshow-container">
+                <div class = "mySlides fade">
+                    <img src = "bargsample.png" alt="Red slide image" >
+                </div>
+                <div class = "mySlides fade">
+                    <img src = "bargsampletwo.png" alt="Blue slide image" >
+                </div>
+                <div class = "mySlides fade">
+                    <img src = "linegsam.jpg" alt="Green-ish slide image" >
+                </div>
+                <div class = "mySlides fade">
+                    <img src = "red.jpg" alt="Fourth slide image">
+                </div>
+            </div>
+        </div>
+        <script>
+            let slideIndex = 0;
+            function showSlides() {
+                const slides = document.getElementsByClassName("mySlides");
+                for (let i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) { slideIndex = 1; }
+                slides[slideIndex - 1].style.display = "block";
+                setTimeout(showSlides, 3000); // 3 seconds hence the 3000 rofl
+            }
+            showSlides();
+        </script>
+    </body>
+    <footer>
+        <div class = "footer">
+            <p>Blake Citro<br>email@example.com<br>Dellia Azondekon<br>email@example.com<br>Maxwell Mickle<br>email@example.com<br>Anthony Galie<br>email@example.com</p>
+            <p>Shoplifting Through Rational Choice Theory<br>Shoplifting Through Rational Choice Theory<br><img src = "Shoplifting Through Rational Choice Theorylogo.png" class = "footer-img" width = "100" height = "100"></p>
+        </div>
+    </footer>
+</html>

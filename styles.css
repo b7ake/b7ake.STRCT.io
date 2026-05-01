@@ -1,0 +1,333 @@
+/*css page*/
+
+/*body home page*/
+html, body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    min-height: 100vh;
+    display:flex;
+    flex-direction:column;
+    background-color: #e9ecef;
+}
+h2{
+    font-size: 35px;
+}
+.title{
+    text-align: left;
+    font-size: 3rem;
+    font-weight: bold;
+    position: relative;
+    margin:10px;
+}
+.title::after{
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #e9ecef;
+    margin: 10px auto 0;
+}
+.subtitle{
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin:10px;
+}
+.subtitle::after{
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #e9ecef;
+    margin: 10px auto 0;
+}
+
+
+/*header*/
+.headercontainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 10px 10px;
+}
+.header-txt{
+    display: flex;
+    flex-direction: column;
+}
+.logo{
+    margin: 10px;
+    padding: 10px;
+}
+
+/*navbar*/
+.navbar{
+    background-color: #343a40;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width:100%;
+}
+.nav-links{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links li a{
+    color: white;
+    padding: 10px 15px;
+    display:inline-block;
+    margin: 5px;
+    text-decoration: none;
+}
+.navbar a:hover{
+    background-color: lightgrey;
+    color:grey;
+}
+
+/*main cards*/
+.card{
+    display: grid;
+    align-items: center;
+    text-align: center;
+    background: #e9ecef;
+    padding: 10px;
+    box-shadow: 0 0 10px black;
+}
+.card-image{
+    outline: 10px solid white;
+}
+
+
+/*slideshow-indexpage*/
+.slidecard{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    text-align: center;
+    background: #e9ecef;
+    padding: 10px;
+    box-shadow: 0 0 10px black;
+}
+.slidecard-txt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.slidecard-txt-button{
+    margin: 10px;
+    padding: 10px;
+}
+.slidecard-txt-button a{
+    color: white;
+    text-decoration:none;
+    background-color:darkblue;
+    border-radius:5px;
+    padding: 5px;
+}
+.slidecard-txt-button a:hover{
+    background-color: #e9ecef;
+    color:grey;
+}
+.slideshow-container{
+    width: 50vw;
+    height: 60vh;
+    position: relative;
+    margin: 50px;
+    clear:both;
+    background-color:white;
+}
+.mySlides{
+    display: none;
+}
+.mySlides img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+/* Small devices specific alterations */
+@media only screen and (max-width: 600px) {
+    /* Slideshow container */
+    .slideshow-container {
+        width: 96vw;
+    }
+}
+
+/*dataindex.html specific card style*/
+
+.card-data{
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align:center;
+}
+
+.card-data-container{
+    text-align: center;
+    padding: 20px;
+}
+.card-data-container p{
+    font-size: 30px;
+}
+.card-data-risshop{
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+
+.card-imp{
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding:20px;
+}
+.card-imp-container{
+    text-align: left;
+    font-size: 30px;
+}
+
+/*comm perspective page or whatever i think, change the name later perhaps*/
+
+.card-comper{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    text-align: center;
+    background: #e9ecef;
+}
+
+
+/*about page*/
+.card-mission{
+    display:grid;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    margin: 0 10px 0 10px;
+}
+.card-about{
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    text-align:center;
+}
+.card-about-person{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-vision{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    outline: 10px solid white;
+}
+
+
+
+
+
+/*comm perspec*/
+
+.card-per-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    gap: 10px;
+    overflow: hidden;
+    
+}
+.card-per-col{
+    align-items: center;
+    padding: 20px;
+    overflow: hidden;
+}
+.card-per-header{
+    padding:20px;
+}
+
+.card-per-video-container{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    overflow:hidden;
+}
+.card-per-video{
+    padding: 20px;
+}
+
+
+
+
+/*references page*/
+.references-container{
+    display: flex;
+    justify-content: space-between;
+    /*grid-template-columns: repeat(2, 1fr);*/
+}
+.references-container li{
+    text-decoration: none;
+    padding: 10px;
+}
+
+
+
+
+
+/*footer*/      /*fix the indenation or whatever the hell just fix it*/
+.footer{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:10px;
+    background-color: #343a40;
+    padding: 15px;
+    justify-content: space-between;
+    text-align: center;
+    align-items:center;
+    color: white;
+}
+
+.footer-img{
+    margin:10px;
+    padding:10px;
+}
+
+
+
+
+
