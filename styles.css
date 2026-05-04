@@ -9,9 +9,13 @@ html, body{
     display:flex;
     flex-direction:column;
     background-color: #e9ecef;
+    font-family: Arial, sans-serif;
 }
 h2{
     font-size: 35px;
+}
+h1{
+    font-size: 40px;
 }
 .title{
     text-align: left;
@@ -101,10 +105,29 @@ h2{
     padding: 10px;
     box-shadow: 0 0 10px black;
 }
-.card-image{
+.card-image-container{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
     outline: 10px solid white;
 }
-
+.card-overview-container{
+    font-size: 30px;
+    padding: 20px;
+}
+.card-image-col{
+    align-items: center;
+    
+    padding: 20px;
+    overflow: hidden;
+}
+.card-image-col p{
+    font-size: 30px;
+    padding: 20px;
+    margin: 20px;
+    text-align: left;
+}
 
 /*slideshow-indexpage*/
 .slidecard{
@@ -116,10 +139,15 @@ h2{
     padding: 10px;
     box-shadow: 0 0 10px black;
 }
-.slidecard-txt{
-    display: flex;
-    flex-direction: column;
+.slidecard-txt-container{
+    padding: 20px;
     align-items: center;
+}
+.slidecard-txt-container p{
+    font-size: 30px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
 }
 .slidecard-txt-button{
     margin: 10px;
@@ -134,26 +162,25 @@ h2{
 }
 .slidecard-txt-button a:hover{
     background-color: #e9ecef;
-    color:grey;
+    color:darkblue;
 }
 .slideshow-container{
-    width: 50vw;
-    height: 60vh;
+    width: 700px;
+    height: 500px;
+    aspect-ratio: 16/9;
     position: relative;
-    margin: 50px;
-    clear:both;
+    
+    margin: 50px auto;
     background-color:white;
 }
 .mySlides{
     display: none;
 }
 .mySlides img{
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
 }
 /* Fading animation */
 .fade {
@@ -177,7 +204,7 @@ h2{
 @media only screen and (max-width: 600px) {
     /* Slideshow container */
     .slideshow-container {
-        width: 96vw;
+        width: 100vw;
     }
 }
 
@@ -194,6 +221,8 @@ h2{
 .card-data-container{
     text-align: center;
     padding: 20px;
+    margin-bottom: 20px;
+
 }
 .card-data-container p{
     font-size: 30px;
@@ -205,7 +234,10 @@ h2{
     gap: 20px;
     padding: 20px;
 }
-
+.card-data-img-container{
+    align-items: center;
+    padding: 20px;
+}
 
 .card-imp{
     display: grid;
@@ -213,12 +245,23 @@ h2{
     grid-template-columns: 1fr;
     gap: 20px;
     padding:20px;
+    
 }
 .card-imp-container{
-    text-align: left;
+    text-align: center;
     font-size: 30px;
 }
 
+.card-inimg-container{
+    align-items: center;
+}
+.card-data-sb{
+    display: grid; 
+    justify-content: space-between;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
 /*comm perspective page or whatever i think, change the name later perhaps*/
 
 .card-comper{
